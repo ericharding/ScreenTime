@@ -1,0 +1,7 @@
+{
+    "schema": "http://cerberus:5532/v1/graphql",
+    "queries": "Query/query.gql",
+    "project": "ScreenTimeQuery",
+    "output": "src/ScreenTimeQuery/",
+    "target": "fsharp"
+}

@@ -12,3 +12,6 @@ let rec run wasIdle =
   }
 
 run false |> Async.RunSynchronously
+
+// System.Environment.UserName
+// System.Environment.MachineName

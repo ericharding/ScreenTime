@@ -1,0 +1,9 @@
+
+mutation InsertScreenTime($ForegroundTitle: String, $Host: String, $IdleSeconds: Int, $User: String, $Begin: timestamptz, $End: timestamptz) {
+  insert_Home_ScreenTime(objects: {ForegroundTitle: $ForegroundTitle, Host: $Host, IdleSeconds: $IdleSeconds, User: $User, Begin: $Begin, End: $End}) {
+    returning {
+      id
+    }
+  }
+}
+
