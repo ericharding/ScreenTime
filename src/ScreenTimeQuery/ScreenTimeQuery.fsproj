@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="ScreenTimeQuery.StringEnum.fs" />
+        <Compile Include="ScreenTimeQuery.Types.fs" />
+        <Compile Include="ScreenTimeQuery.InsertScreenTime.fs" />
+        <Compile Include="ScreenTimeQuery.GraphqlClient.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="FSharp.Core" Version="4.7.0"/>
+        <PackageReference Include="Fable.Remoting.Json" Version="2.11.0" />
+    </ItemGroup>
+</Project>
+    
