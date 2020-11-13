@@ -20,8 +20,8 @@ type ScreenTimeQueryGraphqlClient(url: string, httpClient: HttpClient) =
         async {
             let query = """
                 
-                mutation InsertScreenTime($ForegroundTitle: String, $Host: String, $IdleSeconds: Int = 10, $User: String = "", $Begin: timestamptz = "1970-01-1T0:30:00+05:00", $End: timestamptz = "1970-01-1T0:30:00+05:00") {
-                  insert_Home_ScreenTime(objects: {ForegroundTitle: $ForegroundTitle, Host: $Host, IdleSeconds: $IdleSeconds, User: $User, Begin: $Begin, End: $End}) {
+                mutation InsertScreenTime($ForegroundTitle: String, $Host: String, $IdleSeconds: Int = 10, $User: String = "", $Begin: timestamptz = "1970-01-1T0:30:00+05:00") {
+                  insert_Home_ScreenTime(objects: {ForegroundTitle: $ForegroundTitle, Host: $Host, IdleSeconds: $IdleSeconds, User: $User, Begin: $Begin}) {
                     affected_rows
                   }
                 }

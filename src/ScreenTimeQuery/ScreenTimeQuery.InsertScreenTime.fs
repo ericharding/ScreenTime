@@ -6,8 +6,7 @@ type InputVariables =
       Host: Option<string>
       IdleSeconds: Option<int>
       User: Option<string>
-      Begin: Option<System.DateTimeOffset>
-      End: Option<System.DateTimeOffset> }
+      Begin: Option<System.DateTimeOffset> }
 
 /// insert data into the table: "Home.ScreenTime"
 type Home_ScreenTime_mutation_response =
